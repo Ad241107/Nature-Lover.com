@@ -1,0 +1,135 @@
+*{ margin: 0;padding: 0; font-family: "Rubik",sans-serif;}
+html{
+    background-attachment: fixed;
+   word-spacing: initial;
+}
+header{
+     width: 100%; 
+     height: 600vh;
+     background-image: linear-gradient(to left,#fff 85%,#c3f5ff 20%);
+}
+
+.navsection{
+        width: 100%;height: 20vh;
+        display: flex;justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+}
+
+.logo{
+     width: 40%;
+     color: #e9ecef;
+     background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+     padding-left: 100px;
+     box-sizing: border-box;
+}
+
+.logo h1{
+     text-transform: uppercase;
+     font-size: 1.6rem;
+     animation: frontback 2s linear infinite;
+     animation-direction: alternate;
+}
+
+
+@keyframes frontback{
+	from{ padding-left: 40px }
+	to{padding-right: 40px}
+}
+
+ nav {
+ 	   width: 60%;
+ 	   display: flex;
+ 	   justify-content: space-around;
+ }
+
+ nav a{
+ 	text-decoration:none;
+ 	text-transform: uppercase;
+ 	color: #000;
+ 	font-weight: 900;
+ 	font-size: 17px;
+ 	position: relative;
+ }
+
+ nav a:first-child{
+ color: #4458dc;
+ }
+
+ nav a:before{
+ 	content:"";
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 0;
+    width: 0%;
+ 	height: 2px;
+
+ 	transition: all 0.4s linear;
+border-bottom: 2px solid #4458dc;
+ }
+
+ nav a:hover:before{
+        width: 100%;
+ }
+
+ .main{
+    justify-content: space-between;
+    align-content: center;
+ }
+.img{
+    width: 
+    height: 12px;
+
+}
+.rightside .btn1{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display:inline-block;
+    margin-right: 50px;
+    background-image: linear-gradient(to right,#4458dc 0%,#854fee 100%);
+    color:#fff ;
+    letter-spacing: 10;
+  
+     border: double 2px transparent;
+     box-shadow: 0 10px 30px rgba(118,85,225,.3);
+     
+}
+.rightside .btn2{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 50px;
+    border: 2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+}
+ 
+ .rightside .btn1:hover{
+    border: 2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
+ }
+
+.leftside{
+   animation-direction: reverse;
+   caption-side: left;
+   text-decoration-color: #222;
+   text-shadow: transparent;
+   text-align: top left;
+
+}
